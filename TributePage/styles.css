@@ -1,0 +1,292 @@
+/* FONT FAMILY */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;1,100&display=swap");
+
+:root {
+  /* PRIMARY COLOR */
+  --clr-primary-dark: #000000;
+  --clr-primary-light: #ffffff;
+
+  /* SECONDARY COLORS */
+  --clr-secondary-dark: #6d6875;
+  --clr-secondary-light: #b5838d;
+
+  /* ACCENT COLOR */
+  --clr-accent-dark: #e5989b;
+  --clr-accent-light: #ffb4a2;
+  --clr-accent-lightest: #ffcd82;
+  --clr-accent-lighter: #fff2f2;
+
+  /* PRIMARY FONT */
+  --ff-primary: Montserrat;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--clr-primary-light);
+  /* font-family: var(--ff-primary); */
+  font-family: var(--ff-primary), sans-serif;
+  font-size: 10px;
+  color: var(--clr-primary-dark);
+  letter-spacing: 0.05em;
+}
+
+.container {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 3.6em;
+  font-weight: 700;
+}
+h2 {
+  font-size: 2.4em;
+  color: var(--clr-secondary-light);
+  font-weight: 700;
+}
+p {
+  font-size: 1.8em;
+  font-weight: 400;
+}
+
+/* 
+===========
+HERO CONTENT
+===========
+*/
+
+.hero-content {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 799px) {
+  /* for tablet sizes */
+  .hero-content {
+    height: 100vh;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+#img-div {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+}
+
+@media screen and (max-width: 799px) {
+  #img-div {
+    width: 100%;
+  }
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 40%;
+}
+
+.intro {
+  width: 50%;
+  padding-left: 5rem;
+}
+
+@media screen and (max-width: 799px) {
+  .intro {
+    width: 100%;
+    padding-left: 0;
+    display: block;
+    align-items: center;
+  }
+}
+
+#title {
+  font-size: 10em;
+  padding-bottom: 0.7em;
+}
+
+@media screen and (max-width: 799px) {
+  #title {
+    font-size: 5em;
+  }
+}
+
+#img-caption {
+  font-size: 2.4em;
+  padding-top: 2em;
+}
+
+.intro a {
+  background-color: var(--clr-accent-light);
+  color: var(--clr-primary-dark);
+  padding: 0.7em 2em;
+  font-size: 2em;
+  text-decoration: none;
+}
+.intro a:hover {
+  background-color: var(--clr-accent-lightest);
+}
+
+/* 
+===========
+NEWTONS LAWS
+===========
+*/
+
+#laws-container {
+  background-color: var(--clr-accent-dark);
+  padding: 5em;
+}
+
+.laws h2 {
+  color: var(--clr-primary-light);
+  font-weight: 400;
+  padding-bottom: 1em;
+}
+
+.laws,
+.summary {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 700px) {
+  .laws {
+    flex-direction: column;
+  }
+  .single-law {
+    padding-top: 3em;
+  }
+}
+
+.single-law {
+  max-width: 26.6em;
+}
+
+/* 
+===========
+SUMMARY
+===========
+*/
+
+#tribute-info {
+  padding: 5em;
+}
+
+@media screen and (max-width: 700px) {
+  .summary {
+    flex-direction: column;
+  }
+  .paragraph-summ {
+    margin: 3em 0 !important;
+  }
+}
+
+.paragraph-summ {
+  margin: 3em 5em;
+}
+
+/* 
+===========
+TIMELINE
+===========
+*/
+.event-info {
+  padding: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.event-info li {
+  font-size: 1.8em;
+  list-style-type: none;
+  line-height: 2.5;
+}
+
+.event-info strong {
+  color: var(--clr-primary-dark);
+}
+
+.events {
+  display: flex;
+  margin-top: 3em;
+}
+
+@media screen and (max-width: 700px) {
+  .events {
+    flex-direction: column;
+  }
+  .event-info {
+    padding: 0;
+  }
+}
+
+.event-img img {
+  width: 25vw;
+  height: 625px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 700px) {
+  .event-img img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#timeline-container {
+  padding: 5em;
+  background-color: var(--clr-accent-lighter);
+}
+
+/* 
+===========
+LEARN MORE
+===========
+*/
+
+#learn-more {
+  background-color: var(--clr-secondary-dark);
+  padding: 5em;
+}
+
+.learn-more {
+  display: block;
+  text-align: center;
+  line-height: 2;
+}
+
+.learn-more h1 {
+  color: var(--clr-accent-lightest);
+}
+
+.learn-more p {
+  padding: 2em;
+  color: var(--clr-primary-light);
+}
+
+.learn-more a {
+  background-color: var(--clr-accent-light);
+  color: var(--clr-primary-dark);
+  padding: 0.7em 2em;
+  font-size: 2em;
+  text-decoration: none;
+}
+.learn-more a:hover {
+  background-color: var(--clr-accent-lightest);
+}

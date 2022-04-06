@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Survey Form</title>
+ <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+ <!-- HEADING SECTION -->
+ <section class="section">
+  <header class="form-header">
+   <h1 id="title">Popular Opinion Poll</h1>
+   <p id="description">We appreciate your feedback.</p>
+  </header>
+ </section>
+ <!-- END OF HEADING SECTION -->
+
+ <!-- MAIN FORM SECTION -->
+ <section class="section">
+  <main class="survey-section">
+    <form action="" id="survey-form">
+
+    <!-- INTRODUCTION SECTION -->
+    <div class="form-group intro-group">
+      <label id="name-label" for="name">Name</label><br>
+      <input type="text" name="name" id="name" placeholder="Name" required><br>
+      <label id="email-label" for="email">Email</label><br>
+      <input type="email" name="email" id="email" placeholder="email@example.com" required><br>
+      <label id="number-label" for="age">Age</label><br>
+      <input type="number" name="number" id="number" placeholder="Age" required min="10" max="10"><br>
+    </div>
+      <!-- END OF INTRODUCTION SECTION -->
+
+      <!-- DROPDOWN REQUIREMENT -->
+    <div class="form-group">
+     <label for="dropdown">If age is only a state of mind, which category best describes your state of mind right now?</label><br>
+     <select name="dropdown" id="dropdown">
+      <option disabled selected>Select state of mind</option>
+      <option value="cheeky_child">Cheeky Child</option>
+      <option value="tormented_teenager">Tormented Teenager</option>
+      <option value="mid_life">Mad Mid-Lifer</option>
+      <option value="grand_person">Groovy Grandparent</option>
+     </select>
+    </div>
+    <!-- END OF DROPDOWN -->
+
+    <!-- RADIO REQUIREMENT -->
+    <div class="form-group">
+     <label for="radio">If you could time travel, which period would you go to?</label>
+       <div class="inner-choices">
+         <input type="radio" name="radio_group" id="past" value="past">
+         <label for="past">The Past</label>
+       </div>
+       <div class="inner-choices">
+         <input type="radio" name="radio_group" id="future" value="future">
+         <label for="future">The Future</label>
+       </div>
+       <div class="inner-choices">
+         <input type="radio" name="radio_group" id="nowhere" value="nowhere">
+         <label for="nowhere">I'm good where I am</label>
+       </div>
+    </div>
+    <!-- END OF RADIO -->
+
+    <!-- SECOND DROPDOWN -->
+    <div class="form-group">
+     <label for="dropdown">Which superpower would you like to have?</label>
+     <select name="dropdown" id="dropdown">
+      <option disabled selected>Select superpower</option>
+      <option value="mind_reading">Mind Reading</option>
+      <option value="invisibility">Invisibility</option>
+      <option value="teleportation">Teleportation</option>
+      <option value="flying">Flying</option>
+      <option value="already_have">I already have one</option>
+     </select>
+    </div>
+    <!-- END OF SECOND DROPDOWN -->
+
+    <!-- CHECKBOXES REQUIREMENT -->
+    <div class="form-group">
+     <!-- group one -->
+     <label for="checkboxes">In the last week, what activities have you participated in? (Check all that apply)</label>
+     <div class="ckbx-group">
+       <div class="left-group">
+         <div>
+           <input type="checkbox" id="reading" name="reading" value="read">
+           <label for="reading">Reading</label>
+         </div>
+         <div>
+          <input type="checkbox" id="watch_tv" name="watch_tv" value="watch">
+          <label for="watch_tv">Watching TV</label>
+         </div>
+         <div>
+          <input type="checkbox" id="check_email" name="check_email" value="check">
+          <label for="check_email">Checking Email</label>
+         </div>
+         <div>
+          <input type="checkbox" id="talk_phone" name="talk_phone" value="talk">
+          <label for="talk_phone">Talking on the phone</label>
+         </div>
+         <div>
+          <input type="checkbox" id="meeting" name="meeting" value="meet">
+          <label for="meeting">Meeting with friends for dinner or drinks</label>
+         </div>
+        </div>
+        
+        <div class="right-group">
+          <div>
+            <input type="checkbox" id="surfing" name="surfing" value="surf">
+            <label for="surfing">Surfing the web</label>
+          </div>
+          <div>
+            <input type="checkbox" id="play_sport" name="play_sport" value="sport">
+            <label for="play_sport">Playing a sport</label>
+          </div>
+          <div>
+            <input type="checkbox" id="movies" name="movies" value="movie">
+            <label for="movies">Going to the movies</label>
+          </div>
+          <div>
+            <input type="checkbox" id="none" name="none" value="none">
+            <label for="none">None of the above</label>
+          </div>
+          <div>
+            <input type="checkbox" id="all" name="all" value="all">
+            <label for="all">All of the above</label>
+          </div>
+       </div>
+     </div>
+    </div>
+    <!-- END OF CHECKBOXES -->
+
+    <!-- TEXTAREA REQUIREMENT -->
+    <div class="form-group">
+     <label for="textarea">What is your most proud achievement?</label>
+     <textarea name="textarea" id="textarea" rows="10" placeholder="Enter your answer here..."></textarea>
+    </div>
+    <!-- END OF TEXTAREA -->
+
+    <!-- FORM BUTTON -->
+    <button type="submit" id="submit">Submit</button>
+   </form>
+  </main>
+ </section>
+ <!-- END OF MAIN FORM SECTION -->
+ <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
